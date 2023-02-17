@@ -1,24 +1,20 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - print lowercase followed by uppercase alphabets
- *
- * Return: 0, if succesful
- */
+ * main - entry point
+ * Description: prints the alphabet in lowercase, then uppercase
+ * Return: 0
+*/
 int main(void)
 {
-	char lc;
 
-	for (lc = 'a' ; lc <= 'z' ; lc++)
-	{
-		putchar(lc);
-	}
-	for (lc = 'a' ; lc <= 'z' ; lc++)
-	{
-		putchar(toupper(lc));
-	}
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
 	putchar('\n');
 	return (0);
 }
-Footer
-© 2023 GitHub, Inc.
