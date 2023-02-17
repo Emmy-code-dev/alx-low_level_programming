@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <ctype.h>
 /**
- * main - entry point
- * Description: single digits of base 10 starting from 0 using putchar
- * Return: 0
-*/
+ * main - prints single numbers of base1m
+ *
+ * Return: 0, if succesful
+ */
 int main(void)
 {
-	int s;
+	/*
+	 * prints all single digits numbers 0f base 10,
+	 * starting from zero,only using put char,no char variables
+	 */
+	int x;
 
-	for (s = 0; s < 10; s++)
-	{
-		putchar(s + '0');
-	}
+	for (x = 0 ; x < 10 ; x++)
+		putchar((x % 10 + '0'));
 	putchar('\n');
 	return (0);
 }
-Footer
-© 2023 GitHub, Inc.
